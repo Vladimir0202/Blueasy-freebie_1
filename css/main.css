@@ -1,0 +1,135 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+.clearfix:after {
+	content: " ";
+	/* Older browser do not support empty content */
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {}
+
+body input:required:valid, body textarea:required:valid {}
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+
+.top_header {
+	width: 100%;
+	background: url(../images/banner_bg.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.header_topline {
+	color: #ffffff;
+}
+
+.bg-color {
+	background-color: rgb(80, 92, 99);
+	padding: 30px 0;
+	opacity: 0.8;
+}
+
+.logo {
+	float: left;
+	line-height: 65px;
+}
+
+.main_mnu {
+	background-color: #505C63;
+	color: #fff;
+}
+
+.main_mnu a {
+	color: #ffffff;
+	padding: 12px;
+	margin-left: 5px;
+	display: block;
+}
+
+.main_mnu a:hover {
+	color: #4BCAFF;
+	padding: 10px;
+	margin-left: 5px;
+	border: 2px solid #4BCAFF;
+	border-radius: 3px;
+}
+
+.main_mnu ul {
+	list-style-type: none;
+	float: right;
+	text-transform: uppercase;
+}
+
+.main_mnu ul li {
+	display: inline-block;
+}
+
+.main_mnu_button {
+	color: #fff;
+	margin-top: 8px;
+	padding: 8px 15px 0;
+	border: medium none;
+	background-color: transparent;
+	font-size: 26px;
+	position: relative;
+	z-index: 12;
+}
+
+.header_title {
+	padding: 10%;
+	text-align: center;
+	align: center;
+	border: 1px solid #000;
+}
+
+.header_title h1 {
+	font-family: 'caviar_dreamsregular';
+	color: #FFF;
+	font-size: 2.2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	background: #4B565D;
+	padding: 10px;
+	width: 70%;
+	margin: 0 auto 2% auto;
+}
+
+.header_title h2 {
+	font-family: 'caviar_dreamsregular';
+	color: #FFF;
+	font-size: 2.2em;
+	font-weight: 300;
+	text-transform: uppercase;
+	background: #4B565D;
+	padding: 10px;
+	*\width: 80%;
+	margin: 0 auto 2% auto;
+}
