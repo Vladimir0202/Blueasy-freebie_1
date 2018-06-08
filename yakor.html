@@ -1,0 +1,84 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    /*Блок-параметры НАЧАЛО*/
+#block-parameter{
+    width:160px;
+    height:auto;
+    margin-top:10px;
+    margin-left:10px;
+    border:1px solid;   /*удалить*/
+}
+.title-filter{
+    font:bold 13px sans-serif;
+    margin-top:-10px;
+    margin-left:15px;
+}
+#block-input-price{
+    text-align:right
+}
+ 
+#block-input-price ul{
+    display: inline-block;
+    margin:0;
+    padding: 0;
+    height: 25px;
+    overflow:hidden
+}
+ 
+#block-input-price li{
+    float:left;
+    margin-left:5px
+}
+#block-input-price input{
+    width:30px;
+    height:17px;
+    font:13px sans-serif;
+    border:1px solid #bbbbbb;
+    border-radius:3px;
+    padding-left:3px;
+}
+#block-input-price p{
+    font:13px sans-serif;
+    float:left;
+    margin-top:0;
+    padding-top:2px;
+}
+#blocktrackbar{
+    width:120px;
+    height:20px;
+    margin: 0 0 15px 0;
+    border:1px solid;   /*удалить*/
+}
+/*Блок-параметры ОКОНЧАНИЕ*/
+    </style>
+</head>
+<body>
+    <div id="block-parameter">
+    <p class="block-left-titile">Поиск по параметру</p>
+    <p class="title-filter">Стоимость</p>
+    <form method="get" method="" action="search_filter.php">
+        <div id="block-input-price">
+            <ul>
+                <li><p>от</p></li>
+                <li><input type="text" id="start-price" name="start_price" value="100"/></li>
+                <li><p>до</p></li>
+                <li><input type="text" id="end-price" name="end_price" value="500"/></li>
+                <li><p>грн.</p></li>
+            </ul>
+        </div>
+        <div id="blocktrackbar"></div>
+        <p class="title-filter">Все типы товаров</p>        
+        <ul class="checkbox-type_tovara">
+            <li><input type="checkbox" id="check_type_tovara1"/><label for="check_type_tovara1">Бренд1</label></li>
+            <li><input type="checkbox" id="check_type_tovara2"/><label for="check_type_tovara2">Бренд2</label></li>
+            <li><input type="checkbox" id="check_type_tovara3"/><label for="check_type_tovara3">Бренд3</label></li>
+        </ul>
+        <input type="submit" name="submit" id="button-param-search" value="Найти"/>         
+    </form>      
+</div>
+</body>
+</html>

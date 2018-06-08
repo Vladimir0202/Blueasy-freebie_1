@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	$(".main_mnu_button").click(function () {
         $(".main_mnu ul").slideToggle();
+	});
+	
+	$(".portf_main_mnu_button").click(function () {
+        $(".portf_main_mnu ul").slideToggle();
     });
 
 	//Таймер обратного отсчета
