@@ -68,7 +68,14 @@
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    .btn_message button{
+        padding: 10px 50px;
+    }
+    .btn_message button:hover{
+        padding: 10px 50px;
+    }
+}
 
 /*==========  Mobile First Method  ==========*/
 
